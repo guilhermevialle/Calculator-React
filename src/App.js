@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Interface from "./components/interface/interface";
+import "./App.scss";
+
+import up from "./svgs/upwave.svg";
+import down from "./svgs/downwave.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={up} style={{ position: "absolute", top: "-20%" }} />
+      <Interface />
+      <img src={down} style={{ position: "absolute", bottom: "0%" }} />
     </div>
   );
 }

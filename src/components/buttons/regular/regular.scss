@@ -1,0 +1,32 @@
+.operator {
+  &:focus {
+    outline: solid #63d16a8f 0.5px;
+  }
+}
+
+.regular {
+  all: unset;
+
+  width: 55px;
+  height: 55px;
+  border-radius: 13px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #373737;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.5em;
+
+  font-weight: 300;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+
+  border: 1px transparent;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+}
